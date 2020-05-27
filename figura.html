@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Zadanie 11</title>
+        <link rel="stylesheet" href="style.css">
+        <script>window.MathJax={MathML:{extensions:["mml3.js", "content-mathml.js"]}};</script>
+        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=MML_HTMLorMML"></script>
+    </head>
+    <body onload="zdarzenia()">
+        <main class="container">
+            <div class="zadanie">
+                <h1>Zadanie</h1>
+                <p>Oblicz objętośc stożka o wysokości H i promieniu R.</p>
+            </div>
+            <div class="dane">
+                <h1>Dane Wejściowe</h1>
+                <label for="wys">H=</label>
+                <input type="number" min="0" class="wys" name="wys"><br>
+                <label for="pro">R=</label>
+                <input type="number" min="0" class="pro" name="pro"><br>
+            </div>
+            <div class="figura">
+                <h1>Stożek</h1>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:se="http://svg-edit.googlecode.com" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="777" height="480" class="obrazek">
+                    <title>figura_svg</title>
+                    <g class="currentLayer">
+                        <title>Layer 1</title>
+						<path fill="#4a90d6" fill-opacity="1" stroke="#222222" stroke-opacity="1" stroke-width="2" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M303,286.5 C303,276.8314917127072 343.72375690607737,269 394,269 C444.27624309392263,269 485,276.8314917127072 485,286.5 C485,296.1685082872928 444.27624309392263,304 394,304 C343.72375690607737,304 303,296.1685082872928 303,286.5 Z" id="svg_1"/>
+						<path fill="#4a90d6" fill-opacity="1" stroke="#222222" stroke-opacity="1" stroke-width="2" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M302.1251589919628,285.5510217118421 L393.9618860498678,193.71429465393706 " id="svg_2" class="selected"/>
+						<path fill="#4a90d6" fill-opacity="1" stroke="#222222" stroke-opacity="1" stroke-width="2" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M485.11835308882627,285.5510214938399L393.2816201823433,193.71428858735698" id="svg_4"/>
+						<path fill="#4a90d6" fill-opacity="1" stroke="#222222" stroke-opacity="1" stroke-width="2" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M393.28162018234315,194.3945606829605L393.28162018234315,283.51020520702923" id="svg_3"/>
+                        <text fill="#000000" fill-opacity="null" stroke="#000" stroke-opacity="null" stroke-width="0" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" y="224.453125" x="435.5" id="svg_5" class="h figuraWys">H</text>
+                        <text fill="#000000" fill-opacity="null" stroke="#000" stroke-opacity="null" stroke-width="0" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" y="343.853125" x="390.5" id="svg_6" class="r figuraPro">R</text>
+                    </g>
+                </svg>
+            </div>
+            <div class="obliczenia">
+                <h1>Objętość Bryły</h1>
+                <math class="licz" display="block">
+                    <mrow>
+                        <mrow>
+                            <mn>V</mn>
+                            <mo>=</mo>
+							<mfrac>
+								<mi> 1 </mi>
+								<mi> 3 </mi>
+							 </mfrac>
+                            <mo>&InvisibleTimes;</mo>
+                            <mrow>
+                                <mi>&pi;</mi>
+                            </mrow>
+                            <mo>&InvisibleTimes;</mo>
+                            <msup>
+                                <mi>R</mi>
+                                <mn>2</mn>
+                            </msup>
+                            <mo>&InvisibleTimes;</mo>
+                            <mrow>
+                                <mi>H</mi>
+                            </mrow>
+                        </mrow>
+                        <mrow>
+                            <mo>=</mo>
+							<mfrac>
+								<mi> 1 </mi>
+								<mi> 3 </mi>
+							 </mfrac>
+                            <mo>&times;</mo>
+                            <mi>&pi;</mi>
+                            <mo>&times;</mo>
+                            <msup>
+                                <mi class="r">0</mi>
+                                <mn>2</mn>
+                            </msup>
+                            <mo>&times;</mo>
+                            <mi class="h">0</mi>
+                        </mrow>
+                        <mrow>
+                            <mo>=</mo>
+                            <mi class="wynik">0</mi>
+                        </mrow>
+                    </mrow>
+                </math>
+            </div>
+        </main>
+        <script src="style.js"></script>
+    </body>
+</html>

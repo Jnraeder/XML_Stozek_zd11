@@ -1,0 +1,42 @@
+body {
+    font-size: 12; 
+    padding: 30px;
+    font-family: "Lato", sans-serif;
+    box-sizing: border-box;
+    background: rgb(10, 75, 140);
+}
+
+h1 {
+    font-size: 15;
+}
+
+svg {
+    margin: auto; 
+    display: block;
+    stroke-width: 1;
+}
+
+.container {
+    margin: auto;
+    background-color: rgb(126, 160, 214);
+}
+
+.zadanie, .dane, .figura, .obliczenia {
+    padding: 3rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.licz, .obrazek {
+    float:left;
+}
+
+.figura, .obliczenia {
+    clear: both;
+}
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
